@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+
+[project]
+name = "peak"
+version = "0.1.0"
+description = "A tool to calculate peak and non-peak hours of production"
+authors = [
+    { name="johnson2427", email="blakeejohnson39@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text="Apache2.0" }
+dependencies = [
+    "pytest"
+]
