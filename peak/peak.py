@@ -24,7 +24,7 @@ def calculate_peak_and_nonpeak_hours(year: int, month: int) -> tuple[int, int]:
     for day in cal.itermonthdates(year, month):
 
         # Note: Calandar.itermonthdates starts on the first Monday of
-        #       a week that includes the first day of the month. If 
+        #       a week that includes the first day of the month. If
         #       the first day of the month is on a Wednesday, they prior
         #       month's last two days will be included in this check.
         #       Exclude the days that are included from the prior month.
@@ -44,4 +44,3 @@ def calculate_peak_and_nonpeak_hours(year: int, month: int) -> tuple[int, int]:
             non_peak_hours += 24
 
     return peak_hours, non_peak_hours
-

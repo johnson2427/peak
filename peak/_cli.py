@@ -1,5 +1,7 @@
-import click
 import calendar
+
+import click
+
 from peak.peak import calculate_peak_and_nonpeak_hours
 
 
@@ -26,7 +28,9 @@ def get_hours(year: int, month: int):
     peak, non_peak = calculate_peak_and_nonpeak_hours(year, month)
     month_name = calendar.month_name[month]
     click.echo(f"\nTotal Peak Hours in {month_name}, {year}: {peak} hours")
-    click.echo(f"Total non-peak Hours in {month_name}, {year}: {non_peak} hours")
+    click.echo(
+        f"Total non-peak Hours in {month_name}, {year}: {non_peak} hours"
+    )
 
 
 cli.add_command(get_hours)
