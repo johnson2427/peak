@@ -7,7 +7,7 @@ license = "Apache 2.0"
 readme = "README.md"
 
 [tool.poetry.scripts]
-peak-cli = "src._cli:app"
+peak-cli = "peak._cli:cli"
 
 [tool.poetry.dependencies]
 python = "^3.12"
