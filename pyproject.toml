@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "peak"
+version = "0.1.0"
+description = "A time calculator"
+authors = ["johnson2427 <blakeejohnson39@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.scripts]
+peak-cli = "peak._cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.3"
+black = "^24.8.0"
+isort = "^5.13.2"
+mypy = "^1.11.2"
+pytest-cov = "^5.0.0"
+
+[tool.mypy]
+exclude = "build/"
+
+[tool.black]
+line-length = 79
+target-version = ["py312"]
+include = '\.pyi?$'
+
+[tool.isort]
+line_length = 79
+force_grid_wrap = 0
+include_trailing_comma = true
+multi_line_output = 3
+use_parentheses = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = "peak/"
