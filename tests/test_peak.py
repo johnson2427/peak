@@ -1,4 +1,4 @@
-from src.peak import calculate_peak_and_nonpeak_hours
+from peak import calculate_peak_and_nonpeak_hours
 
 
 def test_calculate_peak_and_nonpeak_hours():
