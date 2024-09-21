@@ -17,4 +17,18 @@ $ poetry shell
 $ poetry install
 ```
 
+## Testing
 
+To test the underlying application code:
+
+```bash
+$ pytest
+```
+
+To run the peak calculation tool:
+
+```bash
+$ peak-cli get-hours <year> <month>
+# year in YYYY format: 2024
+# month in m format: 2
+```
