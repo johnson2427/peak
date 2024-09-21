@@ -41,7 +41,7 @@ jobs:
         run: poetry run pytest -v
 
       - name: Run black
-        run: poetry run black --check-only .
+        run: poetry run black --check .
       
       - name: Run isort
         run: poetry run isort --check-only .
