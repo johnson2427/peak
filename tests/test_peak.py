@@ -1,6 +1,6 @@
 import pytest
 
-from peak import calculate_peak_and_nonpeak_hours  #type: ignore
+from peak import calculate_peak_and_nonpeak_hours  # type: ignore
 
 
 @pytest.mark.parametrize(
