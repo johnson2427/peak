@@ -10,7 +10,7 @@ readme = "README.md"
 peak-cli = "peak._cli:cli"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10"
 click = "^8.1.7"
 
 [tool.poetry.dev-dependencies]

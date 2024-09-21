@@ -3,8 +3,8 @@ Peak Calculator
 
 ## Requirements
 
-Ensure you have python 3.12 installed. This will likely work on older python versions,
-but this has only been tested on python 3.12.
+Ensure you have python >= 3.10 installed. This will likely work on older python versions,
+but this has only been tested on python 3.10+.
 
 This project is set up with the poetry package manager:
 ```bash
