@@ -8,6 +8,8 @@ from peak import calculate_peak_and_nonpeak_hours
     (2024, 9, 294, 426),
     (2024, 10, 322, 422)
 ])
-def test_calculate_peak_and_nonpeak_hours(year, month, expected_peak, expected_non_peak):
+def test_calculate_peak_and_nonpeak_hours(
+    year, month, expected_peak, expected_non_peak
+):
     assert expected_peak, expected_non_peak == calculate_peak_and_nonpeak_hours(year, month)
 

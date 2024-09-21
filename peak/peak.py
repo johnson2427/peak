@@ -45,27 +45,3 @@ def calculate_peak_and_nonpeak_hours(year: int, month: int) -> tuple[int, int]:
 
     return peak_hours, non_peak_hours
 
-
-def display_peak():
-    # Input year and month from the user
-    year = int(input("Enter year (e.g., 2024): "))
-    month = int(input("Enter month (1-12): "))
-
-    # Validate month
-    if not 1 <= month <= 12:
-        print("Invalid month. Please enter a value between 1 and 12.")
-        return
-
-    # Calculate peak and non-peak hours
-    peak, non_peak = calculate_peak_and_nonpeak_hours(year, month)
-
-    # Get month name for better readability
-    month_name = calendar.month_name[month]
-
-    # Display the results
-    print(f"\nTotal Peak Hours in {month_name} {year}: {peak} hours")
-    print(f"Total Non-Peak Hours in {month_name} {year}: {non_peak} hours")
-
-
-if __name__ == "__main__":
-    display_peak()
